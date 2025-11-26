@@ -473,6 +473,162 @@ section {
     margin-bottom: 1rem;
 }
 
+/* Curriculum Styles */
+.curriculum-header {
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.curriculum-title h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.job-title {
+    font-size: 1.3rem;
+    color: var(--text-dark);
+}
+
+.curriculum-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.curriculum-contact p {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.curriculum-section {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(50, 184, 141, 0.1);
+}
+
+.curriculum-section-title {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.curriculum-text {
+    color: var(--text-dark);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.curriculum-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(50, 184, 141, 0.1);
+}
+
+.curriculum-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.curriculum-item h4 {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.curriculum-institution {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.curriculum-list {
+    list-style: none;
+    color: var(--text-dark);
+    line-height: 1.8;
+}
+
+.curriculum-list li {
+    margin: 0.6rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.curriculum-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+}
+
+.curriculum-experience {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(50, 184, 141, 0.1);
+}
+
+.curriculum-experience:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.curriculum-experience h4 {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.curriculum-position {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.skill-item {
+    background: rgba(50, 184, 141, 0.1);
+    border: 1px solid rgba(50, 184, 141, 0.2);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--text);
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.skill-item:hover {
+    background: rgba(50, 184, 141, 0.2);
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.curriculum-footer {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
 /* Footer */
 footer {
     background: var(--secondary);
