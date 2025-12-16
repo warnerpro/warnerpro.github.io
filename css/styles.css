@@ -479,10 +479,9 @@ section {
     border-radius: 20px;
     padding: 3rem;
     margin-bottom: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
-    align-items: center;
 }
 
 .curriculum-title h1 {
@@ -494,6 +493,7 @@ section {
 .job-title {
     font-size: 1.3rem;
     color: var(--text-dark);
+    margin-bottom: 1.5rem;
 }
 
 .curriculum-contact {
